@@ -1,0 +1,34 @@
+{
+  "name": "meta",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "meta": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "meta:google": "tsx src/cli.ts --google",
+    "schedule": "tsx src/schedule.ts",
+    "schedule:prod": "node dist/schedule.js"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@google-cloud/vertexai": "^1.6.0",
+    "@google/generative-ai": "^0.21.0",
+    "@resvg/resvg-js": "^2.6.0",
+    "google-auth-library": "^9.14.1",
+    "googleapis": "^144.0.0",
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2",
+    "node-fetch": "^3.3.2",
+    "react": "^18.3.1",
+    "satori": "^0.10.14",
+    "snoowrap": "^1.23.0",
+    "twitter-api-v2": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.3.10",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.4"
+  }
+}

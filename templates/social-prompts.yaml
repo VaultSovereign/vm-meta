@@ -1,0 +1,5 @@
+# Optional social prompts for cross-posting
+x:
+  - "Chrome 141 fixes CVE-2025-11205. Update now → {url} #CyberSecurity #Chrome"
+linkedin:
+  - "🔐 {title}\n\nHigh-severity issue fixed. Details: {url}"

@@ -1,0 +1,34 @@
+site:
+  repo: VaultSovereign/blog
+  branch: main
+  postsDir: posts
+  ogDir: public/og
+  canonicalBase: https://blog.vaultmesh.org
+publishing:
+  mode: pr
+google:
+  # Get API key from: https://makersuite.google.com/app/apikey
+  # Set via: export GOOGLE_API_KEY="your-key"
+  model: "gemini-1.5-flash"
+  blogger:
+    # Get from Blogger dashboard URL: blogger.com/blog/posts/{blogId}
+    # Set via: export BLOGGER_ID="your-blog-id"
+    enabled: false
+  drive:
+    # Google Drive folder ID for draft syncing
+    draftsFolder: ""
+  sheets:
+    # Google Sheets ID for content calendar
+    calendarId: ""
+channels:
+  x: false
+  linkedin: false
+utm:
+  source: social
+  campaign: default
+guards:
+  requireNoPoC: true
+# Environment variables needed:
+# GOOGLE_API_KEY - for Gemini AI generation
+# BLOGGER_ID - for Google Blogger publishing
+# GOOGLE_APPLICATION_CREDENTIALS - for service account auth (optional)

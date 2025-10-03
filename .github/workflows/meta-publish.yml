@@ -1,0 +1,21 @@
+name: meta publish
+on:
+  pull_request:
+    types: [labeled]
+jobs:
+  publish:
+    if: contains(github.event.pull_request.labels.*.name, 'meta-publish')
+    runs-on: ubuntu-latest
+    env:
+      SITE_REPO: VaultSovereign/blog
+      CANONICAL_BASE: https://blog.vaultmesh.org
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      CHANNEL_X: "0"
+      CHANNEL_LI: "0"
+    defaults: { run: { working-directory: meta } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: pnpm i && pnpm run build
+      - run: node dist/cli.js drafts/*.md push
