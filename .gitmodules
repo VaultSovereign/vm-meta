@@ -1,6 +1,6 @@
 [submodule "external/ops"]
 	path = external/ops
-	url = https://github.com/VaultSovereign/ops.git
+	url = https://github.com/VaultSovereign/vm-ops.git
 [submodule "tools/cmd"]
 	path = tools/cmd
 	url = git@github.com:VaultSovereign/cmd.git
