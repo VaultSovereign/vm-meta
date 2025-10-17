@@ -1,4 +1,6 @@
 [![CI](https://github.com/VaultSovereign/meta/actions/workflows/reuse.yml/badge.svg)](https://github.com/VaultSovereign/meta/actions)
+[![pre-commit](https://github.com/VaultSovereign/vm-meta/actions/workflows/precommit.yml/badge.svg)](https://github.com/VaultSovereign/vm-meta/actions/workflows/precommit.yml)
+
 
 # Meta + Google AI Integration
 
