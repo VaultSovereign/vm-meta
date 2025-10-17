@@ -1,3 +1,5 @@
+[![CI](https://github.com/VaultSovereign/meta/actions/workflows/reuse.yml/badge.svg)](https://github.com/VaultSovereign/meta/actions)
+
 # Meta + Google AI Integration
 
 Your **meta** CLI now has Google AI/Cloud superpowers for cybersecurity content automation.
